@@ -1,0 +1,7 @@
+<resources>
+
+    <!--表格中单元格定义宽度-->
+    <dimen name="dimen_width_80">80dp</dimen>
+
+
+</resources>

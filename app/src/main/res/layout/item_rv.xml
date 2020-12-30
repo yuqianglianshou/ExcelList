@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/Cells"
+        android:background="@drawable/list_item_color_bg"
+        android:text="Column1" />
+
+<!--    拦截事件传递到子控件-->
+    <com.lq.excellist.InterceptLinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/list_item_color_bg">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_a"
+                    style="@style/Cells"
+                    android:text="Column2" />
+
+                <TextView
+                    android:id="@+id/tv_b"
+                    style="@style/Cells"
+                    android:text="Column3" />
+
+                <TextView
+                    android:id="@+id/tv_c"
+                    style="@style/Cells"
+                    android:text="Column4" />
+
+                <TextView
+                    android:id="@+id/tv_d"
+                    style="@style/Cells"
+                    android:text="Column5" />
+
+                <TextView
+                    android:id="@+id/tv_e"
+                    style="@style/Cells"
+                    android:text="Column6" />
+
+                <TextView
+                    android:id="@+id/tv_f"
+                    style="@style/Cells"
+                    android:text="Column7" />
+
+                <TextView
+                    android:id="@+id/tv_g"
+                    style="@style/Cells"
+                    android:text="Column8" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </com.lq.excellist.InterceptLinearLayout>
+
+</LinearLayout>

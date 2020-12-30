@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#b2d235"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/Cells"
+        android:text="姓名" />
+
+
+<!--    可添加观察者的HorizontalScrollView-->
+    <com.lq.excellist.CanObserverHorizontalScrollView
+        android:id="@+id/headerHorizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_a"
+                style="@style/Cells"
+                android:text="性别" />
+
+            <TextView
+                android:id="@+id/tv_b"
+                style="@style/Cells"
+                android:text="年龄" />
+
+            <TextView
+                android:id="@+id/tv_c"
+                style="@style/Cells"
+                android:text="出生日期" />
+
+            <TextView
+                android:id="@+id/tv_d"
+                style="@style/Cells"
+                android:text="家庭住址" />
+
+            <TextView
+                android:id="@+id/tv_e"
+                style="@style/Cells"
+                android:text="电话号码" />
+
+            <TextView
+                android:id="@+id/tv_f"
+                style="@style/Cells"
+                android:text="房？" />
+
+            <TextView
+                android:id="@+id/tv_g"
+                style="@style/Cells"
+                android:text="车？" />
+        </LinearLayout>
+    </com.lq.excellist.CanObserverHorizontalScrollView>
+
+
+</LinearLayout>
